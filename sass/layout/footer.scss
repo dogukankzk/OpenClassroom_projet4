@@ -1,0 +1,46 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: $light-dark;
+    color: $white-color;
+    padding-bottom: 20px;
+
+    & ul{
+        list-style: none;
+        padding: 0;
+        margin: 0px 0px 6px 20px;
+        font-weight: 300;
+    }
+
+    & .liste_logo{
+        font-weight: 500;
+        
+
+    }
+
+    & i{
+        margin-right: 5px;
+        font-size: smaller;
+
+    }
+
+    & .liste_simple li{
+        padding-bottom: 3px;
+    };
+
+    & .fa-handshake-angle{
+        margin-right: 0px;
+    }
+
+    & .resto_partenaire{
+        margin-bottom: 5px;
+    }
+
+    & img {
+        width: 100px;
+        height: 20px;
+        margin: 15px 0px 10px 18px;
+        filter : invert(1)
+
+    }
+}
