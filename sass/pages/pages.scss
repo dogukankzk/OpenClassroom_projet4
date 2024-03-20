@@ -1,0 +1,123 @@
+
+.image_menu{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.menu_container {
+    margin-top: -4rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color:$light-grey;
+    z-index: 1;
+    position: relative;
+
+     .menu_content{
+        padding: 1rem 2rem 0 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+     h2 {
+        font-family: "Shrikhand", "cursive";
+      }
+    
+
+
+}
+
+.menu_content i{
+    position: absolute;
+    right: 2rem;
+}
+
+.heart_logo {
+    @include heart_animation;
+
+  }
+
+.heart_logo:hover{
+    @include heart_color;
+  }
+
+.menu_item {
+    height: 100%;
+    width: 100%;
+
+     h3{
+        border-bottom: 3px aquamarine solid;
+        width: 40px;
+        margin-left: 13px;
+        font-weight: 300;
+        font-size: 0.9em;
+    }
+
+     .item_container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $white-color;
+        border-radius: 15px;
+        margin: 10px 0px 0px 0px;
+        height: 35%;
+        overflow: hidden;
+        
+        &:hover{
+            .text_prix{
+                transform: translateX(0px);
+                span{
+                    background-color: aquamarine;
+                }
+            }
+    }
+
+    }
+
+     .text_container{
+        margin-left: 10px;
+
+        h4, p{
+            margin: 2px;
+        }   
+
+        p{
+            font-weight: 300;
+            font-size: 0.85em;
+        }
+
+        h4{
+            font-weight: 500;
+        }
+
+    }
+
+     .text_prix{
+        display: flex;
+        align-items: center;
+        width: 80px;
+        height: 100%;
+        transform: translateX(50px);
+        transition: all 0.4s;
+
+        p{
+            font-size: 0.8em;
+            margin-right: 10px;
+        }
+
+        span{
+            width: 100%;
+            height: 4.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0px 15px 15px 0px;
+        }
+
+        .fa-circle-check{
+            color: $white-color;
+            font-size: 1.5rem;
+        }
+
+    }
+}

@@ -3,6 +3,7 @@
 @import"./base/base.scss";
 @import"./layout/header.scss";
 @import"./layout/footer.scss";
+@import"./pages/pages.scss";
 
 
 .decouverte {
@@ -149,18 +150,18 @@
     ;
   }
 
-  i{
+  .cards-content i{
     position: absolute;
     right: 2em;
    
   }
 
-  .fa-solid{
+  .heart_logo {
     @include heart_animation
 
   }
 
-  .fa-solid:hover{
+  .heart_logo:hover{
     @include heart_color
 
   }
