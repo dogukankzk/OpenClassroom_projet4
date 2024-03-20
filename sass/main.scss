@@ -57,7 +57,7 @@
     border-radius: 20px;
     padding: 25px 0 25px 25px;
     margin-bottom: 7px;
-    font-size: 16px;
+    font-size: 0.9rem;
     font-weight: 500;
     gap: 15px;
     width: 100%;
@@ -93,7 +93,7 @@
         box-sizing: border-box;
         margin-bottom: 18px;
         width: 100%;
-        
+        font-size: 0.8rem;
     }
 }
 
@@ -120,13 +120,13 @@
     }
 
     & .card-title{
-        margin-bottom: 0;
+        margin: 5px 0px 2px 0px;
     }
 
 
     & .card-txt{
         color: $black-color;
-        margin-left: 20px;
+        margin-left: 10px;
 
     }
 
