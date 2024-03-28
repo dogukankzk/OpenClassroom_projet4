@@ -4,8 +4,8 @@
     background: linear-gradient($pink-color, $purple-color);
     color: $white-color;
     padding: 13px 35px 13px 35px;
-    margin-top: 20px;
     margin-bottom: 50px;
+    cursor: pointer;
    
 
 }
@@ -19,6 +19,7 @@
     opacity: 0;
     transition-property: all;
     transition-duration: 0.9s;
+    cursor: pointer;
 }
 
 @mixin heart_color{

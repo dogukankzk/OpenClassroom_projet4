@@ -44,9 +44,11 @@
 .menu_item {
     height: 100%;
     width: 100%;
+    margin-bottom: 40px;
+
 
      h3{
-        border-bottom: 3px aquamarine solid;
+        border-bottom: 3px $aquamarine solid;
         width: 40px;
         margin-left: 13px;
         font-weight: 300;
@@ -60,18 +62,19 @@
         background-color: $white-color;
         box-shadow: 1px 2px 2px 0px rgba(0,0,0,.25);
         border-radius: 15px;
-        margin: 10px 15px 0px 15px;
+        margin: 10px 8px 0px 8px;
         height: 35%;
         overflow: hidden;
+        cursor: pointer;
         
         &:hover{
             .text_prix{
                 transform: translateX(0px);
                 span{
-                    background-color: aquamarine;
+                    background-color:$aquamarine;
                 }
             }
-    }
+        }
 
     }
 
@@ -127,7 +130,6 @@
 .commander{
     display: flex;
     justify-content: center;
-    margin-top: 15px;
     .button_commander{
         @include button_purple;
         @include shadow_color;
