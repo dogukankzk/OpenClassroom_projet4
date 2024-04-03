@@ -6,30 +6,35 @@
 }
 
 .menu_container {
-    margin-top: -4rem;
+    margin-top: -3rem;
     border-radius: 2rem 2rem 0 0;
     background-color:$light-grey;
     z-index: 1;
     position: relative;
 
      .menu_content{
-        padding: 1rem 2rem 0 1rem;
+        padding: 1rem 1rem 0 1rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
+            i{
+        position: absolute;
+        right: 2rem;
+    }
     }
 
      h2 {
         font-family: "Shrikhand", "cursive";
       }
-    
-
-
+      
+   
 }
 
-.menu_content i{
-    position: absolute;
-    right: 2rem;
+.menu_heart{
+    position: relative;
+    margin-bottom: 0.8rem;
+
+
 }
 
 .heart_logo {
@@ -43,8 +48,9 @@
 
 .menu_item {
     height: 100%;
-    width: 100%;
     margin-bottom: 40px;
+    overflow: hidden;
+
 
 
      h3{
@@ -62,7 +68,7 @@
         background-color: $white-color;
         box-shadow: 1px 2px 2px 0px rgba(0,0,0,.25);
         border-radius: 15px;
-        margin: 10px 8px 0px 8px;
+        margin: 10px 8px 15px 8px;
         height: 35%;
         overflow: hidden;
         cursor: pointer;
@@ -139,3 +145,54 @@
             opacity: 0.8;
     }
 }
+
+
+
+  .item_container {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInUp 0.5s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .item_container:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .item_container:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .item_container:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .item_container:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+
+// responsive deskop // 
+  @media screen and (min-width: 1024px){
+
+    .menu_container{
+       margin: -3rem 9.5rem 0rem 9.5rem;
+       
+       .menu_item{
+           margin: 0rem 8rem 0rem 8rem;
+           
+        }
+        .menu_content{
+
+            justify-content: center;
+            gap: 5rem;
+        }
+        
+    }
+  }
