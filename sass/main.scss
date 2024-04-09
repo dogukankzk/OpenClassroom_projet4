@@ -199,15 +199,17 @@
     .fonctionnement{
 
         h2{
-         margin-left: 35px; 
+         text-align: center;
+         margin-right: 45rem;
         }
 
         .btn_fonction{
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            gap: 30px;
             
             .fonctionnement_button{
-                padding: 20px 60px 15px 30px;
+                padding: 25px 60px 20px 30px;
         }
         }
         
